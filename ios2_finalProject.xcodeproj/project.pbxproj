@@ -20,6 +20,31 @@
 		AE68E0561FEC47F200F26355 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E0551FEC47F200F26355 /* ExtensionDelegate.swift */; };
 		AE68E0581FEC47F200F26355 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E0571FEC47F200F26355 /* NotificationController.swift */; };
 		AE68E05A1FEC47F200F26355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0591FEC47F200F26355 /* Assets.xcassets */; };
+		AE68E07F1FEC496A00F26355 /* Cry.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E06F1FEC496800F26355 /* Cry.wav */; };
+		AE68E0801FEC496A00F26355 /* ICYOpenHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0701FEC496800F26355 /* ICYOpenHat.wav */; };
+		AE68E0811FEC496A00F26355 /* Shaker.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0711FEC496800F26355 /* Shaker.wav */; };
+		AE68E0821FEC496A00F26355 /* CleanFatKick.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0721FEC496800F26355 /* CleanFatKick.wav */; };
+		AE68E0831FEC496A00F26355 /* ICYPerc.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0731FEC496800F26355 /* ICYPerc.wav */; };
+		AE68E0841FEC496A00F26355 /* feels.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0741FEC496800F26355 /* feels.wav */; };
+		AE68E0851FEC496A00F26355 /* ICYHiHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0751FEC496800F26355 /* ICYHiHat.wav */; };
+		AE68E0861FEC496A00F26355 /* ICECREAM.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0761FEC496900F26355 /* ICECREAM.wav */; };
+		AE68E0871FEC496A00F26355 /* 8bitClap.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0771FEC496900F26355 /* 8bitClap.wav */; };
+		AE68E0881FEC496A00F26355 /* Rim.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0781FEC496900F26355 /* Rim.wav */; };
+		AE68E0891FEC496A00F26355 /* ICYVox.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0791FEC496900F26355 /* ICYVox.wav */; };
+		AE68E08A1FEC496A00F26355 /* LowSnare.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E07A1FEC496900F26355 /* LowSnare.wav */; };
+		AE68E08B1FEC496A00F26355 /* Bicc.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E07B1FEC496900F26355 /* Bicc.wav */; };
+		AE68E08C1FEC496A00F26355 /* BWBSnare.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E07C1FEC496900F26355 /* BWBSnare.wav */; };
+		AE68E08D1FEC496A00F26355 /* ICY808.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E07D1FEC496900F26355 /* ICY808.wav */; };
+		AE68E08E1FEC496A00F26355 /* FrozeSnap.wav in Resources */ = {isa = PBXBuildFile; fileRef = AE68E07E1FEC496A00F26355 /* FrozeSnap.wav */; };
+		AE68E0951FEC49C300F26355 /* AlbumArt1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0911FEC49C200F26355 /* AlbumArt1.png */; };
+		AE68E0961FEC49C300F26355 /* ReSpinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0921FEC49C200F26355 /* ReSpinLogo.png */; };
+		AE68E0971FEC49C300F26355 /* AlbumArt2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0931FEC49C200F26355 /* AlbumArt2.png */; };
+		AE68E0981FEC49C300F26355 /* drumtile.png in Resources */ = {isa = PBXBuildFile; fileRef = AE68E0941FEC49C300F26355 /* drumtile.png */; };
+		AE68E09A1FEC4B2D00F26355 /* Track1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E0991FEC4B2D00F26355 /* Track1ViewController.swift */; };
+		AE68E09C1FEC4B4A00F26355 /* Track2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E09B1FEC4B4A00F26355 /* Track2ViewController.swift */; };
+		AE68E09E1FEC4B7600F26355 /* DrumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E09D1FEC4B7600F26355 /* DrumsViewController.swift */; };
+		AE68E0A01FEC4B9700F26355 /* MixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E09F1FEC4B9700F26355 /* MixViewController.swift */; };
+		AE68E0A21FEC4BC300F26355 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68E0A11FEC4BC300F26355 /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +108,31 @@
 		AE68E0591FEC47F200F26355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE68E05B1FEC47F200F26355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE68E05C1FEC47F200F26355 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AE68E06F1FEC496800F26355 /* Cry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cry.wav; sourceTree = "<group>"; };
+		AE68E0701FEC496800F26355 /* ICYOpenHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICYOpenHat.wav; sourceTree = "<group>"; };
+		AE68E0711FEC496800F26355 /* Shaker.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shaker.wav; sourceTree = "<group>"; };
+		AE68E0721FEC496800F26355 /* CleanFatKick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CleanFatKick.wav; sourceTree = "<group>"; };
+		AE68E0731FEC496800F26355 /* ICYPerc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICYPerc.wav; sourceTree = "<group>"; };
+		AE68E0741FEC496800F26355 /* feels.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = feels.wav; sourceTree = "<group>"; };
+		AE68E0751FEC496800F26355 /* ICYHiHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICYHiHat.wav; sourceTree = "<group>"; };
+		AE68E0761FEC496900F26355 /* ICECREAM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICECREAM.wav; sourceTree = "<group>"; };
+		AE68E0771FEC496900F26355 /* 8bitClap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8bitClap.wav; sourceTree = "<group>"; };
+		AE68E0781FEC496900F26355 /* Rim.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rim.wav; sourceTree = "<group>"; };
+		AE68E0791FEC496900F26355 /* ICYVox.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICYVox.wav; sourceTree = "<group>"; };
+		AE68E07A1FEC496900F26355 /* LowSnare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LowSnare.wav; sourceTree = "<group>"; };
+		AE68E07B1FEC496900F26355 /* Bicc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bicc.wav; sourceTree = "<group>"; };
+		AE68E07C1FEC496900F26355 /* BWBSnare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BWBSnare.wav; sourceTree = "<group>"; };
+		AE68E07D1FEC496900F26355 /* ICY808.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ICY808.wav; sourceTree = "<group>"; };
+		AE68E07E1FEC496A00F26355 /* FrozeSnap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FrozeSnap.wav; sourceTree = "<group>"; };
+		AE68E0911FEC49C200F26355 /* AlbumArt1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbumArt1.png; sourceTree = "<group>"; };
+		AE68E0921FEC49C200F26355 /* ReSpinLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReSpinLogo.png; sourceTree = "<group>"; };
+		AE68E0931FEC49C200F26355 /* AlbumArt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbumArt2.png; sourceTree = "<group>"; };
+		AE68E0941FEC49C300F26355 /* drumtile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drumtile.png; sourceTree = "<group>"; };
+		AE68E0991FEC4B2D00F26355 /* Track1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track1ViewController.swift; sourceTree = "<group>"; };
+		AE68E09B1FEC4B4A00F26355 /* Track2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track2ViewController.swift; sourceTree = "<group>"; };
+		AE68E09D1FEC4B7600F26355 /* DrumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumsViewController.swift; sourceTree = "<group>"; };
+		AE68E09F1FEC4B9700F26355 /* MixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixViewController.swift; sourceTree = "<group>"; };
+		AE68E0A11FEC4BC300F26355 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +176,18 @@
 		AE68E02F1FEC47F200F26355 /* ios2_finalProject */ = {
 			isa = PBXGroup;
 			children = (
+				AE68E06A1FEC489600F26355 /* Supporting Files */,
 				AE68E0301FEC47F200F26355 /* AppDelegate.swift */,
 				AE68E0321FEC47F200F26355 /* ViewController.swift */,
 				AE68E0341FEC47F200F26355 /* Main.storyboard */,
 				AE68E0371FEC47F200F26355 /* Assets.xcassets */,
 				AE68E0391FEC47F200F26355 /* LaunchScreen.storyboard */,
 				AE68E03C1FEC47F200F26355 /* Info.plist */,
+				AE68E0991FEC4B2D00F26355 /* Track1ViewController.swift */,
+				AE68E09B1FEC4B4A00F26355 /* Track2ViewController.swift */,
+				AE68E09D1FEC4B7600F26355 /* DrumsViewController.swift */,
+				AE68E09F1FEC4B9700F26355 /* MixViewController.swift */,
+				AE68E0A11FEC4BC300F26355 /* OptionsViewController.swift */,
 			);
 			path = ios2_finalProject;
 			sourceTree = "<group>";
@@ -157,6 +213,49 @@
 				AE68E05C1FEC47F200F26355 /* PushNotificationPayload.apns */,
 			);
 			path = "ios2_finalProject WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AE68E06A1FEC489600F26355 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE68E06E1FEC493600F26355 /* Images */,
+				AE68E06D1FEC492000F26355 /* Drum Hits */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE68E06D1FEC492000F26355 /* Drum Hits */ = {
+			isa = PBXGroup;
+			children = (
+				AE68E0771FEC496900F26355 /* 8bitClap.wav */,
+				AE68E07B1FEC496900F26355 /* Bicc.wav */,
+				AE68E07C1FEC496900F26355 /* BWBSnare.wav */,
+				AE68E0721FEC496800F26355 /* CleanFatKick.wav */,
+				AE68E06F1FEC496800F26355 /* Cry.wav */,
+				AE68E0741FEC496800F26355 /* feels.wav */,
+				AE68E07E1FEC496A00F26355 /* FrozeSnap.wav */,
+				AE68E0761FEC496900F26355 /* ICECREAM.wav */,
+				AE68E07D1FEC496900F26355 /* ICY808.wav */,
+				AE68E0751FEC496800F26355 /* ICYHiHat.wav */,
+				AE68E0701FEC496800F26355 /* ICYOpenHat.wav */,
+				AE68E0731FEC496800F26355 /* ICYPerc.wav */,
+				AE68E0791FEC496900F26355 /* ICYVox.wav */,
+				AE68E07A1FEC496900F26355 /* LowSnare.wav */,
+				AE68E0781FEC496900F26355 /* Rim.wav */,
+				AE68E0711FEC496800F26355 /* Shaker.wav */,
+			);
+			path = "Drum Hits";
+			sourceTree = "<group>";
+		};
+		AE68E06E1FEC493600F26355 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE68E0911FEC49C200F26355 /* AlbumArt1.png */,
+				AE68E0931FEC49C200F26355 /* AlbumArt2.png */,
+				AE68E0941FEC49C300F26355 /* drumtile.png */,
+				AE68E0921FEC49C200F26355 /* ReSpinLogo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +363,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE68E08A1FEC496A00F26355 /* LowSnare.wav in Resources */,
 				AE68E03B1FEC47F200F26355 /* LaunchScreen.storyboard in Resources */,
+				AE68E0971FEC49C300F26355 /* AlbumArt2.png in Resources */,
+				AE68E0861FEC496A00F26355 /* ICECREAM.wav in Resources */,
+				AE68E08E1FEC496A00F26355 /* FrozeSnap.wav in Resources */,
+				AE68E07F1FEC496A00F26355 /* Cry.wav in Resources */,
+				AE68E0951FEC49C300F26355 /* AlbumArt1.png in Resources */,
+				AE68E08C1FEC496A00F26355 /* BWBSnare.wav in Resources */,
+				AE68E0871FEC496A00F26355 /* 8bitClap.wav in Resources */,
+				AE68E08B1FEC496A00F26355 /* Bicc.wav in Resources */,
+				AE68E0811FEC496A00F26355 /* Shaker.wav in Resources */,
+				AE68E0851FEC496A00F26355 /* ICYHiHat.wav in Resources */,
+				AE68E08D1FEC496A00F26355 /* ICY808.wav in Resources */,
+				AE68E0891FEC496A00F26355 /* ICYVox.wav in Resources */,
+				AE68E0881FEC496A00F26355 /* Rim.wav in Resources */,
+				AE68E0981FEC49C300F26355 /* drumtile.png in Resources */,
+				AE68E0841FEC496A00F26355 /* feels.wav in Resources */,
+				AE68E0961FEC49C300F26355 /* ReSpinLogo.png in Resources */,
 				AE68E0381FEC47F200F26355 /* Assets.xcassets in Resources */,
+				AE68E0821FEC496A00F26355 /* CleanFatKick.wav in Resources */,
 				AE68E0361FEC47F200F26355 /* Main.storyboard in Resources */,
+				AE68E0831FEC496A00F26355 /* ICYPerc.wav in Resources */,
+				AE68E0801FEC496A00F26355 /* ICYOpenHat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +413,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE68E09E1FEC4B7600F26355 /* DrumsViewController.swift in Sources */,
 				AE68E0331FEC47F200F26355 /* ViewController.swift in Sources */,
 				AE68E0311FEC47F200F26355 /* AppDelegate.swift in Sources */,
+				AE68E0A21FEC4BC300F26355 /* OptionsViewController.swift in Sources */,
+				AE68E0A01FEC4B9700F26355 /* MixViewController.swift in Sources */,
+				AE68E09A1FEC4B2D00F26355 /* Track1ViewController.swift in Sources */,
+				AE68E09C1FEC4B4A00F26355 /* Track2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
