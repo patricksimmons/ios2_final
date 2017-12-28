@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import MediaPlayer
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var keyArray: NSArray?
+    var someMutableArray: NSMutableArray?
+    var audioPlayer: AVAudioPlayer?
+    var audioPlayer2: AVAudioPlayer?
+    var song: MPMediaItem?
+    var song2: MPMediaItem?
+    var volNum: Float?
+    var volNum2: Float?
+    var songBPM: Float?
+    var songBPM2: Float?
+    var mixBPM: Float?
+    var trackIds: [Int]?
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        keyArray =  ["A","A#","B","C","C#","D","D#","E","F","F#","G","G#"];
         return true
     }
 

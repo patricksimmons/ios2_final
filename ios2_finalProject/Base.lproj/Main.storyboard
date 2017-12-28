@@ -34,6 +34,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="28"/>
                                 <state key="normal" title="Mix"/>
+                                <connections>
+                                    <segue destination="fd6-hG-GUo" kind="presentation" id="uzU-ah-aXY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Mix:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWE-8i-HJ6">
                                 <rect key="frame" x="108" y="187" width="159" height="39"/>
@@ -111,6 +114,9 @@
                                 <state key="normal" title="Play/Pause">
                                     <color key="titleColor" red="0.21358916159999999" green="0.80064654349999997" blue="0.4423116446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playPauseSongWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yF-NC-IT1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0S-Ou-bb5">
                                 <rect key="frame" x="224" y="488" width="93" height="30"/>
@@ -119,6 +125,9 @@
                                 <state key="normal" title="Stop">
                                     <color key="titleColor" red="1" green="0.25665354480000002" blue="0.23205424620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopSongWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khs-Yk-VxM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-mh-p9K">
                                 <rect key="frame" x="200" y="538" width="139" height="49"/>
@@ -127,6 +136,9 @@
                                 <state key="normal" title="Drums">
                                     <color key="titleColor" red="0.92473977799999996" green="0.025700269269999999" blue="0.54855841400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QTg-cD-bVs" kind="presentation" id="ucM-PG-CAQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-i8-Ccw">
                                 <rect key="frame" x="258" y="240" width="86" height="86"/>
@@ -143,19 +155,36 @@
                                 <state key="normal" title="Options">
                                     <color key="titleColor" red="0.50587886569999996" green="0.50970339779999996" blue="0.52265042070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9pc-P0-MzX" kind="presentation" id="ehB-Uu-KLA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAh-ps-A0R">
                                 <rect key="frame" x="16" y="227" width="343" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ZSW-N0-QAi" kind="presentation" id="X5e-RS-7Za"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKG-Ew-Sbs">
                                 <rect key="frame" x="16" y="353" width="343" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="c7D-Sx-QVZ" kind="presentation" id="3Gc-gx-xEh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="oV7-Zd-sa0"/>
                     </view>
+                    <connections>
+                        <outlet property="btArtwork" destination="BGP-i8-Ccw" id="Ysj-bX-QNM"/>
+                        <outlet property="btArtwork2" destination="FTX-Ie-vAG" id="mxu-j5-VDq"/>
+                        <outlet property="lbArtist" destination="CMB-8L-z64" id="VtX-qI-OAl"/>
+                        <outlet property="lbArtist2" destination="lqV-df-Cfb" id="Bhk-00-d3r"/>
+                        <outlet property="lbSongTitle" destination="Qb2-zl-jbF" id="GlE-Ul-CTT"/>
+                        <outlet property="lbSongTitle2" destination="XnC-mF-xzO" id="anO-d9-e2s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,9 +202,21 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Home" width="105" id="KLF-5P-A58"/>
-                                    <barButtonItem title="Mix" width="105" id="wGh-6w-MDe"/>
-                                    <barButtonItem title="Options" width="105" id="UNc-Am-Zxu"/>
+                                    <barButtonItem title="Home" width="105" id="KLF-5P-A58">
+                                        <connections>
+                                            <segue destination="NM0-dy-Qds" kind="unwind" unwindAction="unwindToThisViewControllerWithSender:" id="Ghq-Pp-hNu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Mix" width="105" id="wGh-6w-MDe">
+                                        <connections>
+                                            <segue destination="NM0-dy-Qds" kind="unwind" unwindAction="unwindToThisMixViewControllerWithSender:" id="6aj-ge-4Cf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Options" width="105" id="UNc-Am-Zxu">
+                                        <connections>
+                                            <segue destination="NM0-dy-Qds" kind="unwind" unwindAction="unwindToThisOptionsViewControllerWithSender:" id="ZRt-Hu-HWp"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0V-HS-KLg">
@@ -345,6 +386,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="beg-xF-AAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NM0-dy-Qds" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="144" y="828"/>
         </scene>
@@ -360,9 +402,21 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Home" width="105" id="Rod-0W-6Nj"/>
-                                    <barButtonItem title="Drums" width="107" id="6GI-YU-SaA"/>
-                                    <barButtonItem title="Options" width="109" id="BFI-KP-TRn"/>
+                                    <barButtonItem title="Home" width="105" id="Rod-0W-6Nj">
+                                        <connections>
+                                            <segue destination="2Dn-xO-9EN" kind="unwind" unwindAction="unwindToThisViewControllerWithSender:" id="Bfl-gk-WUp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Drums" width="107" id="6GI-YU-SaA">
+                                        <connections>
+                                            <segue destination="2Dn-xO-9EN" kind="unwind" unwindAction="unwindToThisDrumsViewControllerWithSender:" id="Fbm-4r-GFh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Options" width="109" id="BFI-KP-TRn">
+                                        <connections>
+                                            <segue destination="2Dn-xO-9EN" kind="unwind" unwindAction="unwindToThisOptionsViewControllerWithSender:" id="D3A-Wp-89z"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="LKE-jd-BJm">
@@ -519,6 +573,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="882-cM-wj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Dn-xO-9EN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1024" y="813"/>
         </scene>
@@ -534,7 +589,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Home" width="340" id="HPn-g3-ylF"/>
+                                    <barButtonItem title="Home" width="340" id="HPn-g3-ylF">
+                                        <connections>
+                                            <segue destination="ugv-gm-kDT" kind="unwind" unwindAction="unwindToThisViewControllerWithSender:" id="BlL-Dd-44K"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by Travis Terry &amp; Patrick Simmons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcP-oF-XM3">
@@ -560,6 +619,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MD5-A0-62v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ugv-gm-kDT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1890" y="835"/>
         </scene>
@@ -593,6 +653,9 @@
                                 <rect key="frame" x="14" y="223" width="347" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1406248212" green="0.68196183440000002" blue="0.93780779839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderVolumeChangedWithSender:" destination="ZSW-N0-QAi" eventType="valueChanged" id="ye1-Ua-HQT"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gN-Rs-oPF">
                                 <rect key="frame" x="101" y="283" width="81" height="41"/>
@@ -619,11 +682,17 @@
                                 <rect key="frame" x="39" y="358" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1406248212" green="0.68196183440000002" blue="0.93780779839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tempoDecimalChangedWithSender:" destination="ZSW-N0-QAi" eventType="valueChanged" id="cjc-Yl-h3A"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minimumValue="1" maximumValue="320" translatesAutoresizingMaskIntoConstraints="NO" id="Pth-GO-v1l">
                                 <rect key="frame" x="241" y="358" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1406248212" green="0.68196183440000002" blue="0.93780779839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tempoWholeChangedWithSender:" destination="ZSW-N0-QAi" eventType="valueChanged" id="8F3-Bw-h8j"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+/- 0.1bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR6-dy-i37">
                                 <rect key="frame" x="39" y="327" width="94" height="21"/>
@@ -644,10 +713,26 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <barButtonItem title="Home" width="76" id="cPI-z6-LVi"/>
-                                    <barButtonItem title="Mix" width="76" id="To3-Mb-dhw"/>
-                                    <barButtonItem title="Drums" width="76" id="j5a-i4-R10"/>
-                                    <barButtonItem title="Options" width="76" id="ZOR-Uh-7i8"/>
+                                    <barButtonItem title="Home" width="76" id="cPI-z6-LVi">
+                                        <connections>
+                                            <segue destination="e42-0z-WgJ" kind="unwind" unwindAction="unwindToThisViewControllerWithSender:" id="eDD-5T-KTJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Mix" width="76" id="To3-Mb-dhw">
+                                        <connections>
+                                            <segue destination="e42-0z-WgJ" kind="unwind" unwindAction="unwindToThisMixViewControllerWithSender:" id="hbd-8T-xsX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Drums" width="76" id="j5a-i4-R10">
+                                        <connections>
+                                            <segue destination="e42-0z-WgJ" kind="unwind" unwindAction="unwindToThisDrumsViewControllerWithSender:" id="voL-La-zr6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Options" width="76" id="ZOR-Uh-7i8">
+                                        <connections>
+                                            <segue destination="e42-0z-WgJ" kind="unwind" unwindAction="unwindToThisOptionsViewControllerWithSender:" id="POp-1H-Oek"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-24-Zi9">
@@ -670,6 +755,9 @@
                                 <rect key="frame" x="92" y="487" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1406248212" green="0.68196183440000002" blue="0.93780779839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="keyChangedWithSender:" destination="ZSW-N0-QAi" eventType="valueChanged" id="VwC-ic-UXQ"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeU-ax-4Eq">
                                 <rect key="frame" x="237" y="28" width="122" height="122"/>
@@ -688,10 +776,16 @@
                             <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="69l-aM-YtM">
                                 <rect key="frame" x="76" y="574" width="283" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderProgressChangeWithSender:" destination="ZSW-N0-QAi" eventType="valueChanged" id="2Hk-hE-Gsb"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E30-Fo-4lM">
                                 <rect key="frame" x="16" y="28" width="341" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chooseSongWithSender:" destination="ZSW-N0-QAi" eventType="touchUpInside" id="Zqz-zN-LsE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoG-w8-YEj">
                                 <rect key="frame" x="16" y="568" width="46" height="43"/>
@@ -700,6 +794,9 @@
                                 <state key="normal" title="▶">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playPauseSongWithSender:" destination="ZSW-N0-QAi" eventType="touchUpInside" id="AF7-zH-wUy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLS-oE-dIt">
                                 <rect key="frame" x="201" y="194" width="71" height="21"/>
@@ -719,8 +816,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="PGu-k4-Jcu"/>
                     </view>
+                    <connections>
+                        <outlet property="btArtwork" destination="XeU-ax-4Eq" id="cru-L0-4cd"/>
+                        <outlet property="btPlayPause" destination="CoG-w8-YEj" id="uBf-e7-Whg"/>
+                        <outlet property="lblArtist" destination="opt-Ey-CRd" id="NoQ-o1-DyG"/>
+                        <outlet property="lblKey" destination="MS3-QZ-I4E" id="1ia-Bb-bYq"/>
+                        <outlet property="lblSongLength" destination="IDY-0i-oqr" id="O90-sH-Hzy"/>
+                        <outlet property="lblSongTitle" destination="LjO-z8-JwY" id="sHb-Ox-DdK"/>
+                        <outlet property="lblTempo" destination="L21-LJ-DOF" id="65X-46-IdL"/>
+                        <outlet property="lblVolume" destination="nLS-oE-dIt" id="t5A-JR-Wjv"/>
+                        <outlet property="slProgress" destination="69l-aM-YtM" id="448-CV-Xjn"/>
+                        <outlet property="slVolume" destination="hmt-cF-5pr" id="z2e-rK-cTR"/>
+                        <outlet property="stDecimal" destination="lWi-Bx-PZc" id="qeh-qc-H9D"/>
+                        <outlet property="stKey" destination="xSo-VO-sL7" id="maO-ey-kDS"/>
+                        <outlet property="stWholeNum" destination="Pth-GO-v1l" id="izt-Qq-UCJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbo-m6-ZWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e42-0z-WgJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1037" y="134"/>
         </scene>
@@ -754,6 +867,9 @@
                                 <rect key="frame" x="14" y="215" width="347" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="sliderVolumeChangedWithSender:" destination="c7D-Sx-QVZ" eventType="valueChanged" id="YBr-o6-y7b"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-MM-amU">
                                 <rect key="frame" x="91" y="282" width="81" height="41"/>
@@ -773,11 +889,17 @@
                                 <rect key="frame" x="39" y="357" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="tempoDecimalChangedWithSender:" destination="c7D-Sx-QVZ" eventType="valueChanged" id="scN-aP-6bn"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minimumValue="1" maximumValue="320" translatesAutoresizingMaskIntoConstraints="NO" id="bLj-7P-ODa">
                                 <rect key="frame" x="241" y="357" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="tempoWholeChangedWithSender:" destination="c7D-Sx-QVZ" eventType="valueChanged" id="Rpk-oR-eWt"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+/- 0.1bpm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjH-ea-mDu">
                                 <rect key="frame" x="39" y="326" width="94" height="21"/>
@@ -800,15 +922,27 @@
                                 <items>
                                     <barButtonItem title="Home" width="76" id="BBB-Il-SyG">
                                         <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <connections>
+                                            <segue destination="z6v-uj-Wr7" kind="unwind" unwindAction="unwindToThisViewControllerWithSender:" id="PEU-eK-cev"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Mix" width="76" id="pdQ-Bd-Ijk">
                                         <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <connections>
+                                            <segue destination="z6v-uj-Wr7" kind="unwind" unwindAction="unwindToThisMixViewControllerWithSender:" id="SAa-70-pRo"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Drums" width="76" id="u0G-Fy-I79">
                                         <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <connections>
+                                            <segue destination="z6v-uj-Wr7" kind="unwind" unwindAction="unwindToThisDrumsViewControllerWithSender:" id="VBk-rE-fOo"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Options" width="76" id="lf1-v3-3gd">
                                         <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <connections>
+                                            <segue destination="z6v-uj-Wr7" kind="unwind" unwindAction="unwindToThisOptionsViewControllerWithSender:" id="vp8-cO-CvD"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -832,6 +966,9 @@
                                 <rect key="frame" x="95" y="488" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="keyChangedWithSender:" destination="c7D-Sx-QVZ" eventType="valueChanged" id="eEf-Bb-j5M"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="128.0 bpm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQb-qe-fS2">
                                 <rect key="frame" x="180" y="280" width="136" height="44"/>
@@ -848,6 +985,9 @@
                                 <rect key="frame" x="78" y="572" width="282" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="sliderProgressChangeWithSender:" destination="c7D-Sx-QVZ" eventType="valueChanged" id="s2N-cj-y1u"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00/00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB9-0g-Vji">
                                 <rect key="frame" x="160" y="547" width="119" height="21"/>
@@ -859,6 +999,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iar-KI-Ggs">
                                 <rect key="frame" x="16" y="28" width="342" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chooseSongWithSender:" destination="c7D-Sx-QVZ" eventType="touchUpInside" id="6vO-KJ-BPu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVH-6d-4TF">
                                 <rect key="frame" x="16" y="566" width="46" height="43"/>
@@ -867,6 +1010,9 @@
                                 <state key="normal" title="▶">
                                     <color key="titleColor" cyan="0.0" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="playPauseSongWithSender:" destination="c7D-Sx-QVZ" eventType="touchUpInside" id="qV0-Z3-gEH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onp-6C-c7G">
                                 <rect key="frame" x="202" y="186" width="73" height="21"/>
@@ -886,8 +1032,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Mxb-Um-mLd"/>
                     </view>
+                    <connections>
+                        <outlet property="btArtwork" destination="cBL-iX-Vc1" id="B86-2B-bSk"/>
+                        <outlet property="btPlayPause" destination="VVH-6d-4TF" id="giM-Dh-8kI"/>
+                        <outlet property="lblArtist" destination="oyf-wh-OAc" id="LDK-LI-BEw"/>
+                        <outlet property="lblKey" destination="Qjs-VV-l5G" id="gMN-pA-Rix"/>
+                        <outlet property="lblSongLength" destination="gB9-0g-Vji" id="FdE-qp-gnb"/>
+                        <outlet property="lblSongTitle" destination="bAk-Bk-641" id="BVt-He-Lir"/>
+                        <outlet property="lblTempo" destination="yQb-qe-fS2" id="8gR-dj-LMo"/>
+                        <outlet property="lblVolume" destination="onp-6C-c7G" id="Jfb-0o-hZ8"/>
+                        <outlet property="slProgress" destination="Lpa-ZH-GXU" id="uz9-Mc-i0K"/>
+                        <outlet property="slVolume" destination="v3J-eC-Vam" id="PTQ-3k-My6"/>
+                        <outlet property="stDecimal" destination="Zcu-JY-ZGS" id="YgV-gM-ftz"/>
+                        <outlet property="stKey" destination="nlC-qY-RUo" id="3wT-X1-gN4"/>
+                        <outlet property="stWholeNum" destination="bLj-7P-ODa" id="uOq-5F-gCk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Peo-MF-5aW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="z6v-uj-Wr7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1908" y="134"/>
         </scene>

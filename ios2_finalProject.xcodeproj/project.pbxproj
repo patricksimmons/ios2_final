@@ -660,7 +660,7 @@
 		AE68E0681FEC47F200F26355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEZP5Z2SN2;
 				INFOPLIST_FILE = ios2_finalProject/Info.plist;
@@ -675,7 +675,7 @@
 		AE68E0691FEC47F200F26355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEZP5Z2SN2;
 				INFOPLIST_FILE = ios2_finalProject/Info.plist;

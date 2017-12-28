@@ -21,6 +21,9 @@ class MixViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwindToThisMixViewController(sender: UIStoryboardSegue) {
+    }
+    
 
     /*
     // MARK: - Navigation
